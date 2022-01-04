@@ -56,7 +56,7 @@ function addFruit() {
   columnfruit.innerHTML = myGrocery[0];
   columndate.innerHTML = myGrocery[1];
   columnbuyMe.innerHTML = myGrocery[2];
-  columnedit.append(dlt, edit);
+  columnedit.append(dlt);
   rowTable.append(columnfruit, columndate, columnbuyMe, columnedit);
   table.appendChild(rowTable);
   let frm = document.getElementsByName("myForm")[0];
@@ -71,7 +71,9 @@ function hanFetClick(id) {
 
 function deleteItem(element) {
   document.getElementsByTagName("tr")[element].remove();
-  alert("deleted!");
+  setTimeout(() => {
+      alert("deleted!");
+  }, 300);
 }
 
 window.onload = function () {
