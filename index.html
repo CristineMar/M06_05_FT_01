@@ -17,7 +17,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="media/logo.jpg" alt="" width="100" onclick="hanFetClick()"
+                <img id="an_image" src="media/logo.jpg" alt="" width="100" onclick="hanFetClick(this.id)"
                     class="d-inline-block align-text-center text-uppercase rounded fs-4">
                 Bootstrap
             </a>
@@ -40,7 +40,7 @@
             <hr>
             <button type="submit" class="btn btn-primary" value="submit" onclick="addFruit()">Submit</button>
         </form>
-        <button onclick="hanFetClick()"> click me! </button>
+        <button id="a_button" onclick="hanFetClick(this.id)"> click me! </button>
     </div>
 
     <div class="container mx-auto m-2">

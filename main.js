@@ -32,8 +32,9 @@ function addFruit() {
   return false;
 }
 
-function hanFetClick() {
-  alert("clicked!");
+function hanFetClick(id) {
+  document.getElementById(id);
+  alert("clicked!" + id);
 }
 
 window.onload = function () {
