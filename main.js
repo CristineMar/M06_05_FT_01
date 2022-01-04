@@ -9,7 +9,7 @@ function myFruits() {
   }
 }
 
-function addFruit() {
+function hanFetClick() {
   let fruit = document.getElementById("mySelect").value;
   let date = document.getElementById("expiry").value;
   let buyMe = document.getElementById("buyMe").value;
@@ -25,11 +25,11 @@ function addFruit() {
   let rowTable = table.insertRow(1);
   for (let y = 0; y < myGrocery.length; y++) {
     let column = rowTable.insertCell(y);
-      column.innerHTML = myGrocery[y];
+    column.innerHTML = myGrocery[y];
   }
   let frm = document.getElementsByName("myForm")[0];
   frm.reset();
-    return false;
+  return false;
 }
 
 window.onload = function () {

@@ -14,46 +14,45 @@
 
 <body>
 
-<nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="media/logo.jpg" alt="" width="100"
-                class="d-inline-block align-text-center text-uppercase rounded fs-4">
-            Bootstrap
-        </a>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.jpg" alt="" width="100"
+                    class="d-inline-block align-text-center text-uppercase rounded fs-4">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+    <div class="container mx-auto m-2">
+        <form name="myForm" action="main.js" method="post">
+            <label> Select Fruit: </label>
+            <select id="mySelect" required>
+            </select>
+            <hr>
+            <label for="expiry">Expiry Date:</label>
+            <input class="form-control" type="date" id="expiry" name="birthday" required>
+            <hr>
+            <label> Buy: </label>
+            <label> Yes: </label>
+            <input class="form-check-input" type="radio" id="buyMe" name="buyMe" value="Yes" checked>
+            <label> No: </label>
+            <input class="form-check-input" type="radio" id="buyMe" name="buyMe" value="No">
+            <hr>
+            <button type="submit" class="btn btn-primary" value="submit" onclick="hanFetClick()">Submit</button>
+        </form>
     </div>
-</nav>
-<div>
-<form name="myForm" action="main.js" method="post">
-    <label> Select Fruit: </label>
-    <select id="mySelect" required>
-    </select>
-    <hr>
-    <label for="expiry">Expiry Date:</label>
-    <input class="form-control" type="date" id="expiry" name="birthday" required>
-    <hr>
-    <label> Buy: </label>
-    <label> Yes: </label>
-    <input class="form-check-input" type="radio" id="buyMe" name="buyMe" value="Yes" checked>
-    <label> No: </label>
-    <input class="form-check-input" type="radio" id="buyMe" name="buyMe" value="No">
-    <hr>
-    <button type="submit" class="btn btn-primary" value="submit" onclick="addFruit()">Submit</button>
-</form>
-</div>
 
-<div>
-    <h2>Table</h2>
-    
-    <table id="myTable"  class="table">
-        <tr>
-            <th>Fruit</th>
-            <th>Expiration</th>
-            <th>Bought</th>
-            <th>Delete</th>
-        </tr>
-    </table>
-</div>
+    <div class="container mx-auto m-2">
+        <h2>Table</h2>
+
+        <table id="myTable" class="table">
+            <tr>
+                <th>Fruit</th>
+                <th>Expiration</th>
+                <th>Bought</th>
+            </tr>
+        </table>
+    </div>
 
     <!-- Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
