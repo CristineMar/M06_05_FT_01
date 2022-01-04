@@ -9,7 +9,7 @@ function myFruits() {
   }
 }
 
-function hanFetClick() {
+function addFruit() {
   let fruit = document.getElementById("mySelect").value;
   let date = document.getElementById("expiry").value;
   let buyMe = document.getElementById("buyMe").value;
@@ -30,6 +30,10 @@ function hanFetClick() {
   let frm = document.getElementsByName("myForm")[0];
   frm.reset();
   return false;
+}
+
+function hanFetClick() {
+  alert("clicked!");
 }
 
 window.onload = function () {
